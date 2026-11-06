@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#173d32" />
+  <meta name="description" content="ORIGRAN SPICES — thoughtfully sourced spices for everyday cooking and bulk supply." />
+  <title>ORIGRAN SPICES — Pure Spices. Better Living.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Carefully selected spices. Delivered with care. <span>Wholesale enquiries welcome</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Origran home">
+      <span class="brand-mark">O</span><span><strong>ORIGRAN</strong><small>SPICES · EST. WITH PURPOSE</small></span>
+    </a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home" data-nav="home">Home</a><a href="#shop" data-nav="shop">Shop</a>
+      <a href="#wholesale" data-nav="wholesale">Wholesale</a><a href="#about" data-nav="about">Our story</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" id="accountBtn">Sign in</button>
+      <button class="cart-button" id="cartBtn">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF GOOD FLAVOUR</p>
+        <h1>Bring home the<br><em>real taste</em> of spices.</h1>
+        <p class="hero-intro">A considered collection of everyday essentials and exceptional spices, selected to bring warmth, depth and character to every kitchen.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#shop">Explore the collection <span>↗</span></a><a class="under-link" href="#wholesale">I’m buying in bulk</a></div>
+        <div class="hero-proof"><span>✳ Thoughtfully selected</span><span>✳ Retail & wholesale</span><span>✳ Quality first</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image"></div>
+        <div class="hero-stamp"><span>GOOD FOOD</span><b>BEGINS<br>WITH<br>GOOD SPICE</b><span>ORIGRAN · 01</span></div>
+        <div class="image-caption">A little more soul in every sprinkle.</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><b>01</b><span>Selected with care</span></div><div><b>02</b><span>Everyday essentials</span></div>
+      <div><b>03</b><span>Bulk supply options</span></div><div><b>04</b><span>Personal service</span></div>
+    </section>
+
+    <section class="section collection-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2>Spice up the <em>everyday.</em></h2></div><a class="under-link" href="#shop">Shop all spices ↗</a></div>
+      <div class="category-pills"><button class="pill active" data-filter="all">All spices</button><button class="pill" data-filter="powder">Ground spices</button><button class="pill" data-filter="whole">Whole spices</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-photo"></div><div class="feature-copy"><p class="eyebrow">FOR EVERY KIND OF KITCHEN</p><h2>Small quantities.<br><em>Big possibilities.</em></h2><p>Whether you’re stocking your home pantry or sourcing for your business, find a supply option that works for you.</p><div class="feature-links"><a href="#shop">Shop retail <span>↗</span></a><a href="#wholesale">Explore wholesale <span>↗</span></a></div></div>
+    </section>
+
+    <section class="section wholesale-section" id="wholesale">
+      <div class="wholesale-copy"><p class="eyebrow">ORIGRAN FOR BUSINESS</p><h2>Good partnerships<br>start with <em>good spice.</em></h2><p>For retailers, restaurants, caterers and distributors looking for dependable spice supply. Apply for a wholesale account to access bulk pricing and tailored order quantities.</p><ul class="check-list"><li>Dedicated wholesale pricing</li><li>Bulk pack sizes and minimum order quantities</li><li>Quote requests for larger requirements</li></ul><button class="btn btn-light" id="wholesaleApply">Apply for wholesale access <span>↗</span></button></div>
+      <div class="wholesale-art"><div class="wholesale-art-inner"><span>ORIGRAN</span><b>FROM OUR<br>STORE TO<br>YOUR BUSINESS.</b><small>WHOLESALE · PARTNERSHIPS</small></div></div>
+    </section>
+
+    <section class="section values-section" id="about"><p class="eyebrow">A NOTE ABOUT ORIGRAN</p><h2>Good ingredients deserve<br><em>good attention.</em></h2><p class="values-text">ORIGRAN is built around a simple belief: the ingredients we use every day matter. We bring together a thoughtful spice collection for home cooks and business buyers, with a focus on quality, clear information and helpful service.</p><a class="under-link" href="#contact">Get to know us ↗</a></section>
+
+    <section class="contact-band" id="contact"><div><p class="eyebrow">LET’S TALK SPICE</p><h2>Have a question?<br><em>We’re here to help.</em></h2></div><div class="contact-details"><p>For product enquiries, bulk requirements or order support, get in touch with our team.</p><a href="https://wa.me/" id="whatsappLink" target="_blank" rel="noreferrer">WhatsApp us ↗</a><a href="mailto:hello@origran.example" id="emailLink">hello@origran.example ↗</a><a href="#contact" id="contactFormOpen">Send an enquiry ↗</a></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">O</span><span><strong>ORIGRAN</strong><small>SPICES · EST. WITH PURPOSE</small></span></a><div class="footer-links"><a href="#shop">Shop</a><a href="#wholesale">Wholesale</a><a href="#faq">FAQ</a><a href="#shipping">Shipping</a><a href="#returns">Returns</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#admin" id="adminLink">Admin</a></div><small>© <span id="year"></span> ORIGRAN SPICES. All rights reserved.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart"><div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h3>Your bag</h3></div><button class="icon-btn close-drawer">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div class="coupon-row"><input id="couponInput" placeholder="Discount code"><button id="applyCoupon">Apply</button></div><p id="couponMessage" class="muted tiny"></p><div class="total-row"><span>Subtotal</span><b id="cartSubtotal">₹0</b></div><div class="total-row"><span>Discount</span><b id="cartDiscount">₹0</b></div><div class="total-row grand-total"><span>Total</span><b id="cartTotal">₹0</b></div><button class="btn btn-dark full" id="checkoutBtn">Continue to checkout →</button><small>Shipping calculated at checkout.</small></div></aside>
+
+  <div class="modal" id="modal"><div class="modal-card"><button class="icon-btn modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
